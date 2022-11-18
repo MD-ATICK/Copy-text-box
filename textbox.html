@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>txt copy box</title>
+    <link rel="stylesheet" href="textbox.css" />
+    <link
+      rel="shortcut icon"
+      href="/Landing-page/logopng.png"
+      type="image/x-icon"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <div class="fristbox">
+        <p>HTML Code :</p>
+        <textarea name="" id="htmlbox">
+ 
+ <!-- <!DOCTYPE html>
+       <html lang="en">
+            <head>
+               <meta charset="UTF-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+         <title>image garelly box</title>
+                    <link rel="stylesheet" href="imggrelary.css">
+                </head>
+                
+                <body>
+                    <div class="container">
+                        <div class="content-serch">
+                            <input type="search" class="searchbox" placeholder="Search a movie">
+                        </div>
+                        <div class="image">
+                          <div class="img-item"  data-name="nature">
+                            <img src="/Landing-page/hovai.jpg" style="border: 3px solid black;" alt="">
+                            <h3>Nature</h3>
+                          </div>
+                          <div class="img-item" data-name="spider">
+                            <img src="/Landing-page/hovai222.jpg" style="border:3px solid black ; box-shadow: none;" alt="">
+                            <h3>Spider</h3>
+                          </div>
+                          <div class="img-item" data-name="blackspider">
+                            <img src="/Landing-page/black.jpg" style="object-position: top;" alt="">
+                            <h3>Black Spider</h3>
+                          </div>
+                          <div class="img-item" data-name="joker">
+                            <img src="/Landing-page/normalman.jpg" alt="">
+                            <h3>Joker</h3>
+                          </div>
+                          <div class="img-item" data-name="nature">
+                            <img src="/Landing-page/batman.jpg" alt="">
+                            <h3>Nature</h3>
+                          </div>
+                          <div class="img-item" data-name="spider">
+                            <img src="/Landing-page/hovai.jpg" alt="">
+                            <h3>Spider</h3>
+                          </div>
+                          <div class="img-item" data-name="blackspider">
+                            <img src="/Landing-page/hovai222.jpg" alt="">
+                            <h3>Black Spider</h3>
+                          </div>
+                          <div class="img-item" data-name="joker">
+                            <img src="/Landing-page/black.jpg" alt="">
+                            <h3>Joker</h3>
+                          </div>
+                          <div class="img-item" data-name="nature">
+                            <img src="/Landing-page/normalman.jpg" alt="">
+                            <h3>Nature</h3>
+                          </div>
+                          <div class="img-item" data-name="joker">
+                            <img src="/Landing-page/batman.jpg" alt="">
+                            <h3>Joker</h3>
+                          </div>
+                          <div class="img-item" data-name="spider">
+                            <img src="/Landing-page/hovai.jpg" alt="">
+                            <h3>Spider</h3>
+                          </div>
+                          <div class="img-item" data-name="blackspider">
+                            <img src="/Landing-page/hovai222.jpg" alt="">
+                            <h3>Black Spider</h3>
+                          </div>
+                          <div class="img-item" data-name="joker">
+                            <img src="/Landing-page/black.jpg" alt="">
+                            <h3>Joker</h3>
+                          </div>
+                          <div class="img-item" data-name="nature">
+                            <img src="/Landing-page/normalman.jpg" alt="">
+                            <h3>Nature</h3>
+                          </div>
+                          <div class="img-item" data-name="joker">
+                            <img src="/Landing-page/batman.jpg" alt="">
+                            <h3>Joker</h3>
+                          </div>
+                        </div>
+                    </div>
+                
+                    <script>
+                      const search = document.querySelector(".searchbox")
+                      const image = document.querySelectorAll(".img-item")
+                      const alpabet = /[a-zA-Z]/
+                      search.addEventListener("keyup" , (w) => {
+                        console.log(w);
+                
+                        if (w.key == "Enter") {
+                          const srchvalue = search.value
+                          const srchinfo = srchvalue.toLowerCase()
+                          console.log(srchinfo);
+                          image.forEach( (f) => {
+                            if (srchinfo === f.dataset.name) {
+                             return f.style.display = "block";
+                            }
+                            f.style.display = "none";
+                          }) 
+                        }  
+                      })
+                
+                      search.addEventListener("keyup" , () => {
+                        if (search.value != "" ) return
+                        
+                        image.forEach( (f) => {
+                          f.style.display = "block"
+                        })
+                      })
+                
+                    </script>
+                </body>
+                </html>-->
+            </textarea
+        >
+        <button class="htmlbutton">Copy Text</button>
+      </div>
+    </div>
+
+    <script>
+        const htmlbox = document.querySelector("#htmlbox")
+        const htmlbutton = document.querySelector(".htmlbutton")
+
+        htmlbutton.addEventListener("click" , () => {
+            console.log("atick");
+           const w = htmlbox.select()
+          document.execCommand("copy")
+          htmlbutton.innerHTML= "Copied"
+        })
+
+
+        
+    </script>
+  </body>
+</html>
